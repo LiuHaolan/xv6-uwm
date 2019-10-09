@@ -29,9 +29,11 @@ SYSCALL(getpid)
 SYSCALL(sbrk)
 SYSCALL(sleep)
 SYSCALL(uptime)
+// here is the new syscall
 SYSCALL(getnumsyscallp)
 SYSCALL(getpinfo)
 SYSCALL(shmgetat)
 SYSCALL(shm_refcount)
 SYSCALL(clone)
 SYSCALL(join)
+

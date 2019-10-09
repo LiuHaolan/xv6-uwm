@@ -270,6 +270,9 @@ fork(void)
   pid = np->pid;
   np->state = RUNNABLE;
 
+  // haolan proc system call data field
+  np->num_proc_syscall = 0;
+
   // p4b count pgdir
   add_ref((void*)np->pgdir);
   safestrcpy(np->name, proc->name, sizeof(proc->name));

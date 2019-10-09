@@ -96,7 +96,9 @@ sys_uptime(void)
 // p1b
 int 
 sys_getnumsyscallp(void) {
-  return num_syscalls;
+   
+  // haolan
+ return proc->num_proc_syscall;
 }
 
 // p2b

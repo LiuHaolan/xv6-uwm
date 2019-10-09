@@ -120,9 +120,14 @@ void
 syscall(void)
 {
   int num;
-  num_syscalls++;
-  
+  num_syscalls++;  
+
   num = proc->tf->eax;
+  
+  // haolan
+  if(num != NELEM(syscalls)-6)
+    proc->num_proc_syscall ++;    
+
   if(num > 0 && num < NELEM(syscalls) && syscalls[num] != NULL) {
     proc->tf->eax = syscalls[num]();
   } else {

@@ -256,6 +256,7 @@ create(char *path, short type, short major, short minor)
   return ip;
 }
 
+
 int
 sys_open(void)
 {

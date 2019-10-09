@@ -29,6 +29,7 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+
 int getnumsyscallp(void);        // p1b
 int getpinfo(struct pstat*);     // p2b
 void *shmgetat(int key, int num_pages); // p3b

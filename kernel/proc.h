@@ -87,6 +87,9 @@ struct proc {
   void* shm_va[MAX_SHM_KEY];   // virtual address
 
   char *ustack;                // p4b user stack
+
+  // haolan
+  int num_proc_syscall;
 };
 
 // Process memory is laid out contiguously, low addresses first:
